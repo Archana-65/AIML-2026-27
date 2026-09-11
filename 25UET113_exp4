@@ -1,0 +1,276 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 6,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "1\n",
+      "2\n",
+      "3\n",
+      "4\n",
+      "5\n",
+      "6\n",
+      "7\n",
+      "8\n",
+      "9\n",
+      "10\n"
+     ]
+    }
+   ],
+   "source": [
+    "#display 1 to 10--\n",
+    "for i in range (1,11):\n",
+    "    print(i)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 16,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "10 9 8 7 6 5 4 3 2 1 "
+     ]
+    }
+   ],
+   "source": [
+    "#display 10 to 1 reverse oder--\n",
+    "for i in range (10,0,-1):\n",
+    "    print(i, end=\" \")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 13,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "2\n",
+      "4\n",
+      "6\n",
+      "8\n",
+      "10\n",
+      "12\n",
+      "14\n",
+      "16\n",
+      "18\n"
+     ]
+    }
+   ],
+   "source": [
+    "#display even numbers--\n",
+    "for i in range(1,20,1):\n",
+    "    if i%2==0:\n",
+    "        print(i)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 14,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "1\n",
+      "3\n",
+      "5\n",
+      "7\n",
+      "9\n",
+      "11\n",
+      "13\n",
+      "15\n",
+      "17\n",
+      "19\n"
+     ]
+    }
+   ],
+   "source": [
+    "#display odd numbers --\n",
+    "for i in range(1,20,1):\n",
+    "    if i%2!=0:\n",
+    "        print(i)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 20,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Enter no of intergers to be add10\n",
+      "55\n"
+     ]
+    }
+   ],
+   "source": [
+    "#display sum of integers--\n",
+    "add=0\n",
+    "j=int(input(\"Enter no of intergers to be add\"))\n",
+    "for i in range(1,j+1):\n",
+    "    add=add+i\n",
+    "print(add)    "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 21,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Enter a integer5\n",
+      "120\n"
+     ]
+    }
+   ],
+   "source": [
+    "#factorial calculation\n",
+    "fact=1\n",
+    "num=int(input(\"Enter a integer\"))\n",
+    "for i in range(1,num+1):\n",
+    "    fact=fact*i\n",
+    "print(fact)    "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 42,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "1 1\n",
+      "1 2\n",
+      "2 1\n",
+      "2 2\n"
+     ]
+    }
+   ],
+   "source": [
+    "for i in range(1,3):\n",
+    "    for j in range(1,3):\n",
+    "        print(i,j)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 32,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Enter a integer3\n",
+      "3\n",
+      "6\n",
+      "9\n",
+      "12\n",
+      "15\n",
+      "18\n",
+      "21\n",
+      "24\n",
+      "27\n",
+      "30\n"
+     ]
+    }
+   ],
+   "source": [
+    "n=int(input(\"Enter a integer\"))\n",
+    "for i in range(1,11):\n",
+    "    print(i*n)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 41,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Enetr your textindia\n",
+      "india\n",
+      "no of vowels= 3\n"
+     ]
+    }
+   ],
+   "source": [
+    "text=str(input(\"Enetr your text\"))\n",
+    "print(text)\n",
+    "\n",
+    "\n",
+    "count=0\n",
+    "\n",
+    "for i in text:\n",
+    "    if i in \"aeiouAEIUO\":\n",
+    "        count=count+1\n",
+    "        \n",
+    "print(\"no of vowels=\", count)        "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.8.5"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 4
+}
